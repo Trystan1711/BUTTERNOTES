@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="compte.css" rel="stylesheet">
+    <link href="css/compte.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <header>
     <nav>
-        <a href="../butter/accueil.html">Accueil</a>
-        <a href="../butter/noteseleves.html">Notes</a>
-        <a href="../butter/compte.html">Profil</a>
+        <a href="accueil.php">Accueil</a>
+        <a href="noteseleves.php">Notes</a>
+        <a href="compte.php">Profil</a>
     </nav>
 </header>
 
@@ -19,6 +19,7 @@
     <p> Nom eleves</p><br>
     <p> Prenom eleves</p><br>  
     <p> TP</p><br> 
+    <a href = logout.php>Deconnexion </a>
 </div>
 
 <div class="popo">
