@@ -14,8 +14,18 @@
         <label for="login">Login:</label><br>
             <input type="text" id="login" name="login"><br>
             <label for="password">Mot de passe:</label><br>
+       
             <input type="password" id="password" name="password"><br><br> 
             <button class="button" ><span><a class="bouton_connexion" href="compte.php">Connexion</a></span></button>
+            <select name="role" id="role-choix"><br>
+  <option value="">Choisir</option>
+  <option value="prof">enseignant </option>
+  <option value="admin">admin</option>
+  <option value="eleve">etudiant</option>
+            
+       
+        
+        
         </center> 
 </body>
 </html>
