@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #c4c4c4;
     font-family: Arial, sans-serif;
 }
 header {
@@ -24,29 +24,35 @@ header nav a:hover {
 
 .kolo
  {
-    width: 200px;
+    border-radius: 70px;
+    position: relative;
+    left: 800px;
+    top: 150px;
+    width: 250px;
     height: 500px;
     background: #ffff
   }
 
+  p
+  {
+  color: rgb(0, 0, 0);
+  left: 50px;
+  font-size: 20px;
+  position: relative;
+  top: 100px;
+  } 
 
-.popo
-{
+  .oui
+  {
+    color: rgb(0, 0, 0);
+    left: 50px;
+    font-size: 20px;
+    bottom: 150px;
     position: relative;
-    bottom:500px;
-    left: 300px;
-    width: 2000px;
-    height: 500px;
-    background: #ffffff
-  }
+  top: 150px;
+    } 
 
-  .lolo
-{
-    position: relative;
-    bottom:1000px;
-    left: 350px;
-    width: 600px;
-    height: 400px;
-    background: #bdbdbd
-  }
-  
+
+
+
+
