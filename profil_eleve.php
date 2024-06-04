@@ -8,28 +8,27 @@
 </head>
 <header>
     <nav>
-        <a href="accueil.php">Accueil</a>
+        <a href="profil_eleve.php">Profil</a>
         <a href="noteseleves.php">Notes</a>
-        <a href="compte.php">Profil</a>
+        
     </nav>
 </header>
 
 <body>
+
 <div class="kolo">
-    <p> Nom eleves</p><br>
-    <p> Prenom eleves</p><br>  
-    <p> TP</p><br> 
+   
+<p> Nom eleves</p><br> 
+    <p> Prenom eleves<p>  
+    <p> TP</p>
+    <div class = oui>
     <a href = logout.php>Deconnexion </a>
 </div>
+</div>
 
-<div class="popo">
-    
-</div>
-<div class="lolo">
-    <p> Maths 3/20</p>
-    <p> Hebergement 14/20</p> 
-    <p>Développement</p>
-</div>
-<h4> juju</h4>
+
+
+
+
 </body>
 </html>
