@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 04 juin 2024 à 14:52
--- Version du serveur : 10.4.28-MariaDB
--- Version de PHP : 8.2.4
+-- Généré le : lun. 10 juin 2024 à 01:26
+-- Version du serveur : 10.4.32-MariaDB
+-- Version de PHP : 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `admin`
+-- Structure de la table `administrateur`
 --
 
-CREATE TABLE `admin` (
+CREATE TABLE `administrateur` (
   `id_admin` int(11) DEFAULT NULL,
   `nom` varchar(255) DEFAULT NULL,
   `prenom` varchar(255) DEFAULT NULL,
@@ -35,6 +35,13 @@ CREATE TABLE `admin` (
   `mdp` varchar(255) DEFAULT NULL,
   `identifiant` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `administrateur`
+--
+
+INSERT INTO `administrateur` (`id_admin`, `nom`, `prenom`, `email`, `mdp`, `identifiant`) VALUES
+(0, '[value-2]', '[value-3]', '[value-4]', '123', 'papa');
 
 -- --------------------------------------------------------
 
@@ -54,6 +61,13 @@ CREATE TABLE `eleve` (
   `annee_formation` int(5) DEFAULT NULL,
   `identifiant` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `eleve`
+--
+
+INSERT INTO `eleve` (`id_eleve`, `nom`, `prenom`, `email`, `mdp`, `TD`, `TP`, `formation`, `annee_formation`, `identifiant`) VALUES
+(0, '[value-2]', '[value-3]', '[value-4]', '123', 0, '[value-7]', '[value-8]', 0, 'mama');
 
 -- --------------------------------------------------------
 
@@ -135,12 +149,6 @@ INSERT INTO `ue` (`id_ue`, `intitule`) VALUES
 --
 -- Index pour les tables déchargées
 --
-
---
--- Index pour la table `admin`
---
-ALTER TABLE `admin`
-  ADD UNIQUE KEY `identifiant` (`identifiant`);
 
 --
 -- Index pour la table `eleve`
