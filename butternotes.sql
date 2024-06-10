@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 10 juin 2024 à 01:26
+-- Généré le : lun. 10 juin 2024 à 15:38
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -85,6 +85,13 @@ CREATE TABLE `enseignant` (
   `mdp` varchar(255) DEFAULT NULL,
   `identifiant` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `enseignant`
+--
+
+INSERT INTO `enseignant` (`id_enseignant`, `prenom`, `nom`, `matiere`, `ue`, `email`, `mdp`, `identifiant`) VALUES
+(0, '[value-2]', '[value-3]', '[value-4]', '[value-5]', '[value-6]', '123', 'caca');
 
 -- --------------------------------------------------------
 
