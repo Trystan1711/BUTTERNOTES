@@ -9,7 +9,7 @@
 <header>
     <nav>
         <a href="profil_eleve.php">Profil</a>
-        <a href="noteseleves.php">Notes</a>
+        <a href="ajouter_noteseleves.php">Ajouter Des Notes</a>
         
     </nav>
 </header>
@@ -18,9 +18,8 @@
 
 <div class="kolo">
    
-<p> Nom eleves</p><br> 
-    <p> Prenom eleves<p>  
-    <p> TP</p>
+<p> Nom enseignant</p><br> 
+    <p> Prenom enseignant<p>  
     <div class = oui>
     <a href = logout.php>Deconnexion </a>
 </div>
