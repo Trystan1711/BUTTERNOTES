@@ -35,6 +35,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: profil_eleve.php");
             exit();
         }
+    } else if ($role == "enseignant") {
+        $sql = "SELECT * FROM enseignant WHERE identifiant = '$identifiant' AND mdp = '$mdp'";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            // Redirection vers le profil élève
+            header("Location: profil_enseignant.php");
+            exit();
+        }
     }
 
     // Si les identifiants sont incorrects
@@ -61,7 +69,8 @@ $conn->close();
         <label for="role">Rôle:</label>
         <select id="role" name="role">
             <option value="admin">Admin</option>
-            <option value="eleve">Élève</option>
+            <option value="eleve">Etudiant</option>
+            <option value="enseignant">Enseignant</option>
         </select><br><br>
         <input type="submit" value="Se connecter">
     </form>
