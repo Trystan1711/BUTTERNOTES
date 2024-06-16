@@ -1,0 +1,55 @@
+body {
+    background-color: #fff3e0; /* couleur de fond de par.css */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ff9800; /* couleur de fond de header de par.css */
+    color: white; /* couleur du texte de header de par.css */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #cccccc; /* conservé */
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white; /* couleur blanche pour harmoniser avec header */
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #ef6c00; /* couleur d'arrière-plan de input[type="submit"]:hover de par.css */
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.kolo {
+    border-radius: 70px;
+    position: relative;
+    left: 550px;
+    top: 1px;
+    width: 250px;
+    height: 500px;
+    background: #ffe0b2; /* couleur de fond de form de par.css */
+}
+
+p {
+    color: #e65100; /* couleur de label de par.css */
+    left: 50px;
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+}
+
+.oui {
+    color: #e65100; /* couleur de label de par.css */
+    left: 50px;
+    font-size: 20px;
+    bottom: 150px;
+    position: relative;
+    top: 150px;
+}
