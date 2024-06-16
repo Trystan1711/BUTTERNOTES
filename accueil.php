@@ -1,9 +1,9 @@
 <?php
 // Connexion à la base de données
-$servername = "localhost";
-$identifiant = "root";
-$mdp = "";
-$dbname = "butternotes";
+$servername = "mysql-butternotes17.alwaysdata.net";
+$identifiant = "363221";
+$mdp = "AppBouty";
+$dbname = "butternotes17_labase";
 
 // Créer la connexion
 $conn = new mysqli($servername, $identifiant, $mdp, $dbname);
@@ -58,10 +58,11 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <title>Page de connexion</title>
-    <link href="css/connexion.css" rel="stylesheet" type="text/css">
+    <link href="css/par.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <form method="post" action="accueil.php">
+    <header>Butternotes</header>
+    <form method="post" action="index.php">
         <label for="identifiant">Identifiant:</label>
         <input type="text" id="identifiant" name="identifiant" required><br><br>
         <label for="mdp">Mot de passe:</label>
